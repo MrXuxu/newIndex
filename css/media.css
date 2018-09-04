@@ -40,6 +40,29 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .box {
+    height: 70px !important;
+  }
+  .box .content img {
+    display: none;
+  }
+  .box .cover p {
+    display: inline-block !important;
+    margin: 0 !important;
+    display: inline-block;
+    font-size: 20px !important;
+    color: #000 !important;
+  }
+  .box .cover i {
+    display: inline-block !important;
+    font-size: 16px !important;
+  }
+  .box:hover p {
+    color: #fff !important;
+  }
+  .box:hover p, .box:hover i {
+    display: inline-block !important;
+  }
 }
 
 /* -----------------导航响应式---------------- */

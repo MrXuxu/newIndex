@@ -286,7 +286,7 @@
 .show .i-container .box {
   height: 250px;
   transition: all .6s;
-  padding: 10px;
+  padding: 10px 10px 30px 10px;
 }
 
 .show .i-container .box > div {

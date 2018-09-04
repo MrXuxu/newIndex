@@ -38,6 +38,29 @@ $c-dblue: #2c3e50;
             
         }
     }
+    .box {
+        height: 70px !important;
+        .content {
+            img { display: none;}
+        }
+        .cover {
+            p {
+                display: inline-block !important;
+                margin: 0 !important;
+                display: inline-block;
+                font-size: 20px !important;
+                color: #000 !important;
+            }
+            i {
+                display: inline-block !important;
+                font-size: 16px !important;
+            }
+        }
+        &:hover {
+            p { color: #fff !important; }
+            p,i {display: inline-block !important}
+        }
+    }
 }
 /* -----------------导航响应式---------------- */
 

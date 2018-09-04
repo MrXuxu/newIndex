@@ -211,7 +211,7 @@ $c-gray: rgb(92, 92, 92);
             height: 250px;
             transition: all .6s;
             
-            padding: 10px;
+            padding: 10px 10px 30px 10px;
             >div { height: 100%; }
             &:hover {
                 transform: scale(1.2);
@@ -234,6 +234,7 @@ $c-gray: rgb(92, 92, 92);
                 text-align: center;
                 font-size: 23px;
                 color: #fff;
+                // color: black;
                 font-weight: bold;
                 transition: all .6s;
                 >p {
