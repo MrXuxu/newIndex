@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@media (max-width: 768px) {
+  .title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .title span {
+    margin-left: auto;
+    margin-right: auto;
+    animation: widthest 3s forwards !important;
+  }
+  @keyframes widthest {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    margin-top: 140px;
+  }
+  .title h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .title h2 {
+    font-size: 25px;
+  }
+  .title a {
+    font-size: 14px;
+    width: 180px;
+    height: 35px;
+    line-height: 33px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* -----------------导航响应式---------------- */
+@media (max-width: 950px) {
+  .nav {
+    position: relative;
+  }
+  .i-container > a {
+    width: 45px !important;
+    height: 45px !important;
+    top: 11px !important;
+  }
+  .i-container > ul {
+    display: none;
+    position: absolute;
+    float: none !important;
+    top: 70px;
+    left: 0;
+    width: 100% !important;
+    border-top: 1px solid #f0a44d;
+  }
+  .i-container > ul li {
+    float: none !important;
+    background-color: #2c3e50;
+    width: 100% !important;
+    text-align: center;
+  }
+  .i-container > span {
+    font-size: 20px !important;
+    top: -4px !important;
+    padding: 0 !important;
+    border: none !important;
+    margin-left: 20px !important;
+  }
+  .i-container > i {
+    float: right;
+    display: block !important;
+    width: 40px;
+    height: 40px;
+    line-height: 64px !important;
+  }
+}

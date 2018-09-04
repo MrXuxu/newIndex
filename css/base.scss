@@ -1,0 +1,127 @@
+/*---------------------基本样式------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #333;
+    font-size: 12px;
+    font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+div {
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+}
+
+
+/*--------------------附加class-------------------*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.row::before {
+    display: table;
+    content: "";
+}
+.row::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+/*----右边框---*/
+.pr {
+    position: relative;
+}
+.border-right::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    border-right: 1px solid #333;
+}
+
+/*-----三角形-----*/
+@mixin trangle($local:before, $size:10px, $deg:0deg) {
+    &::#{$local} {
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border: $size solid transparent {
+            bottom: { color: #333; }
+        }
+        transform: rotate($deg);
+    }
+}
+
+/*-----------------bootstrap3栅格布局------------------*/
+[class^="col"]{
+    float: left;
+}
+@media (max-width: 767px){
+    @for $i from 1 to 13 {
+        .col-xs-#{$i}{
+            width: 100%/12*$i;
+        }
+        .col-xs-offset-#{$i}{
+            margin-left: 100%/12*$i;
+        }
+    }
+    .hidden-xs { display: none !important; }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    @for $i from 1 to 13 {
+        .col-sm-#{$i}{
+            width: 100%/12*$i;
+        }
+        .col-sm-offset-#{$i}{
+            margin-left: 100%/12*$i;
+        }
+    }
+    .container { width: 750px; }
+    .hidden-sm { display: none !important; }
+}
+@media (min-width:992px) and (max-width: 1199px){
+    @for $i from 1 to 13 {
+        .col-md-#{$i}{
+            width:100%/12*$i;
+        }
+        .col-md-offset-#{$i}{
+            margin-left: 100%/12*$i;
+        }
+    }
+    .container { width: 970px; }
+}
+@media (min-width: 1200px) {
+    @for $i from 1 to 13 {
+        .col-lg-#{$i}{
+            width: 100%/12*$i;
+        }
+        .col-lg-offset-#{$i}{
+            margin-left: 100%/12*$i;
+        }
+    }
+    .container { width: 1170px; }
+}
+
+
+

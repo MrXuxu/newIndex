@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  .title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: aqua;
+  }
+  .title span {
+    animation: widthest 3s forwards !important;
+  }
+  @keyframes widthest {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
