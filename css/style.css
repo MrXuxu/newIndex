@@ -280,7 +280,6 @@
 
 .show {
   text-align: center;
-  height: 1000px;
 }
 
 .show .i-container .box {
@@ -333,4 +332,9 @@
   display: none;
   font-size: 30px;
   color: #e87e04;
+}
+
+/* -------------技术掌握开始------------ */
+.skill {
+  text-align: center;
 }

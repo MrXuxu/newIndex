@@ -205,7 +205,7 @@ $c-gray: rgb(92, 92, 92);
 }
 .show {
     text-align: center;
-    height: 1000px;
+    // height: 1000px;
     .i-container {
         .box {
             height: 250px;
@@ -254,6 +254,10 @@ $c-gray: rgb(92, 92, 92);
     }
 }
 
+/* -------------技术掌握开始------------ */
+.skill {
+    text-align: center;
+}
 
 
 
